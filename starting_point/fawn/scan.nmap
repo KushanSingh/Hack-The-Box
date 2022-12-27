@@ -1,0 +1,27 @@
+# Nmap 7.92 scan initiated Sat Dec 24 20:37:47 2022 as: nmap -vv -sT -sV -sC -p- -oN output.nmap 10.129.1.14
+Nmap scan report for 10.129.1.14
+Host is up, received conn-refused (0.0038s latency).
+Scanned at 2022-12-24 20:37:54 GMT for 98s
+Not shown: 65534 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+21/tcp open  ftp     syn-ack vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.10.14.77
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 0        0              32 Jun 04  2021 flag.txt
+Service Info: OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 24 20:39:32 2022 -- 1 IP address (1 host up) scanned in 104.58 seconds
